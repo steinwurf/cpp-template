@@ -2,5 +2,8 @@
     "name": "project",
     "namespace": "project",
     "version_namespace": "STEINWURF_PROJECT_VERSION",
-    "binary_name": "project"
+    "binary_name": "project",
+    "_copy_without_render": [
+        "waf"
+    ]
 }

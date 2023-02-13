@@ -76,3 +76,4 @@ if(${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME})
 
     add_executable(example examples/example.cpp)
     target_link_libraries(example steinwurf::{{cookiecutter.name}})
+endif()

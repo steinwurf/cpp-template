@@ -1,6 +1,6 @@
-{% for i in len(cookiecutter.name) %}={% endfor %}
+{% for i in cookiecutter.name %}={% endfor %}
 {{cookiecutter.name}}
-{% for i in len(cookiecutter.name) %}={% endfor %}
+{% for i in cookiecutter.name %}={% endfor %}
 
 This is the default description, please change it.
 

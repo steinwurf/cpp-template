@@ -1,6 +1,6 @@
-=============================
-{{cookiecutter.project_name}}
-=============================
+=====================
+{{cookiecutter.name}}
+=====================
 
 This is the default description, please change it.
 

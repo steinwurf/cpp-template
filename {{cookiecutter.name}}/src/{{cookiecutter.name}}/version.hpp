@@ -1,15 +1,15 @@
 #pragma once
 
-#include <cstring>
+#include <string>
 
 namespace {{cookiecutter.namespace}}
 {
 
-#define STEINWURF_{{cookiecutter.name|upper}}_VERSION v0_0_0
+#define {{cookiecutter.version_namespace}} v0_0_0
 
-inline namespace STEINWURF_{{cookiecutter.name|upper}}_VERSION
+inline namespace {{cookiecutter.version_namespace}}
 {
-auto version() -> std::string;
+std::string version();
 
 }
 }

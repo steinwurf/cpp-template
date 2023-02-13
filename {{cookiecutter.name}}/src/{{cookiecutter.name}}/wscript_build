@@ -2,9 +2,10 @@
 # encoding: utf-8
 
 bld.stlib(
-    features='cxx',
-    source=bld.path.ant_glob('**/*.cpp'),
-    target='template',
+    features="cxx",
+    source=bld.path.ant_glob("**/*.cpp"),
+    target="{{cookiecutter.binary_name}}",
     use=[],
-    export_includes=['..']
+    export_includes=[".."],
+    **({"install_path": "${PREFIX}/lib"} if bld.is_toplevel() else {})
 )

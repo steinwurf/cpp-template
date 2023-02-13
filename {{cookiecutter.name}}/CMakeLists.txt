@@ -21,6 +21,6 @@ if(NOT DEFINED STEINWURF_RESOLVE)
     set(STEINWURF_TOP_NAME {{cookiecutter.name}})
 endif()
 
-file(GLOB_RECURSE {{cookiecutter.name}}_sources ./src/*.cpp)
+file(GLOB_RECURSE project_sources ./src/*.cpp)
 
-add_executable({{cookiecutter.name}} ${{{cookiecutter.name}}_sources})
+add_executable({{cookiecutter.name}} ${project_sources})
